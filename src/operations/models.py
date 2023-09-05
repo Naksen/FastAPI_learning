@@ -1,9 +1,9 @@
-from sqlalchemy import MetaData, Table, Column, Integer, String, TIMESTAMP
+from sqlalchemy import Table, Column, Integer, String, TIMESTAMP, MetaData
 
 metadata = MetaData()
 
 operation = Table(
-    "operations",
+    "operation",
     metadata,
     Column("id", Integer, primary_key=True),
     Column("quantity", String),
